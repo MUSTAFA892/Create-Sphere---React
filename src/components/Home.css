@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Press+Start+2P&display=swap'); /* Importing Abril Fatface font */
+
+/* Typewriter container */
+.typewriter-container {
+  width: fit-content;
+  overflow: hidden;
+  position: center;
+  margin-top: 130px;
+  margin-left: 300px; /* Moved text downwards */
+}
+
+/* Applying funky font */
+.typewriter {
+  font-family: "Abril Fatface", serif; /* Applying Abril Fatface font */
+  font-size: 3.5rem; /* Larger font size for impact */
+  letter-spacing: 0.2em; /* Adjusted letter spacing */
+  color: #ffffff; /* Funky color */
+  font-weight: 600; /* Increased thickness of the font */
+  display: inline-block;
+  white-space: nowrap;
+  border-right: 5px solid #FFD700; /* Thicker caret */
+  width: 0; /* Initial width is zero */
+  animation: typing-typewriter 4s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation-fill-mode: forwards;
+  font-style: normal;
+}
+
+@keyframes typing-typewriter {
+  from { width: 0; }
+  to { width: 25ch; } /* Adjust width to fit the text for typewriter-container */
+}
+
+/* Ttypewriter container */
+.ttypewriter-container {
+  width: fit-content;
+  overflow: hidden;
+  position: center;
+  margin-top: 85px;
+  margin-left: 60px; /* Moved text downwards */
+}
+
+/* Applying funky font */
+.ttypewriter {
+  font-family: "Moderustic", sans-serif; /* Applying Abril Fatface font */
+  font-size: 1rem; /* Smaller font size for impact */
+  letter-spacing: 0.2em; /* Adjusted letter spacing */
+  color: #ffffff; /* Funky color */
+  font-weight: 600; /* Increased thickness of the font */
+  display: inline-block;
+  white-space: nowrap;
+  border-right: 5px solid #0c0c0c; /* Thicker caret */
+  width: 0; /* Initial width is zero */
+  animation: typing-ttypewriter 4s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation-fill-mode: forwards;
+  animation-delay: 4s; /* Delay starts after .typewriter animation completes */
+  font-style: normal;
+}
+
+@keyframes typing-ttypewriter {
+  from { width: 0; }
+  to { width: 190ch; } /* Adjust width to fit the text for ttypewriter-container */
+}
+
+/* Tttypewriter container */
+.tttypewriter-container {
+  width: fit-content;
+  overflow: hidden;
+  position: center;
+  margin-top: 40px;
+  margin-left: 170px; /* Moved text downwards */
+}
+
+/* Applying funky font */
+.tttypewriter {
+  font-family: "Moderustic", sans-serif; /* Applying Abril Fatface font */
+  font-size: 1rem; /* Smaller font size for impact */
+  letter-spacing: 0.2em; /* Adjusted letter spacing */
+  color: #ffffff; /* Funky color */
+  font-weight: 600; /* Increased thickness of the font */
+  display: inline-block;
+  white-space: nowrap;
+  border-right: 5px solid #0c0c0c; /* Thicker caret */
+  width: 0; /* Initial width is zero */
+  animation: typing-tttypewriter 4s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation-fill-mode: forwards;
+  animation-delay: 8s; /* Delay starts after .ttypewriter animation completes */
+  font-style: normal;
+}
+
+@keyframes typing-tttypewriter {
+  from { width: 0; }
+  to { width: 190ch; } /* Adjust width to fit the text for ttypewriter-container */
+}
+.ttttypewriter-container {
+  width: fit-content;
+  overflow: hidden;
+  position: center;
+  margin-top: 40px;
+  margin-left: 500px; /* Moved text downwards */
+}
+
+/* Applying funky font */
+.ttttypewriter {
+  font-family: "Moderustic", sans-serif; /* Applying Abril Fatface font */
+  font-size: 1rem; /* Smaller font size for impact */
+  letter-spacing: 0.2em; /* Adjusted letter spacing */
+  color: #ffffff; /* Funky color */
+  font-weight: 600; /* Increased thickness of the font */
+  display: inline-block;
+  white-space: nowrap;
+  border-right: 5px solid #0c0c0c; /* Thicker caret */
+  width: 0; /* Initial width is zero */
+  animation: typing-tttypewriter 4s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation-fill-mode: forwards;
+  animation-delay: 11s; /* Delay starts after .ttypewriter animation completes */
+  font-style: normal;
+}
+
+@keyframes typing-ttttypewriter {
+  from { width: 0; }
+  to { width: 100ch; } /* Adjust width to fit the text for ttypewriter-container */
+}
+
+/* Keyframes for blinking caret */
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #FFD700; } /* Blinking caret in gold color */
+}

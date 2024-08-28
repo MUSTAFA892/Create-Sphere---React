@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow-y: auto; /* Allow vertical scrolling */
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  min-height: 100vh; /* Ensure container grows with content */
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Ensure video is behind content */
+}
+
+.content {
+  position: relative; /* Changed from absolute to relative */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+  z-index: 1; /* Ensure content is above video */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+}
+
+/* Ensure the content is centered and visible on mobile screens */
+@media (max-width: 768px) {
+  .content {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding: 0 5px;
+  }
+}
